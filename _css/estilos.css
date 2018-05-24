@@ -1,0 +1,145 @@
+body{
+	/* background-color: #d7cfc3; */
+	background-image: url(background-white.jpg);
+}
+
+p{
+	text-align: justify;
+	text-indent: 50px;
+	text-align: center;
+}
+p.titulo{
+	text-align: justify;
+	text-indent: 50px;
+	color: orangered;
+	display: inline-block;
+	background-color: #bfbec9;
+	padding: 5px;
+	margin: 2px;
+}
+p.offer{
+	text-align: center;
+	font-size: 42px;
+	font-weight: 900;
+	color: darkslateblue;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* adicionando fontes externas */
+@font-face {
+    font-family: Aerosol ;
+    font-style: normal;
+    font-weight: normal;
+    src: url(Aerosol.ttf);
+}
+@font-face {
+    font-family: Base ;
+    font-style: normal;
+    font-weight: normal;
+    src: url(Base\ 02.ttf);
+}
+
+/* Formatação do menu */
+nav#menu{
+	display: block;
+}
+
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 200px;
+	left: 200px;
+}
+
+nav#menu li{
+	display: inline-block;
+	background-color: #bfbec9;
+	padding: 5px;
+	margin: 2px;
+	transition: background-color 1s;
+}
+
+nav#menu li:hover{
+	background-color: #606060;
+}
+
+nav#menu a{
+	color: #000000;
+	text-decoration:  none;
+}
+
+nav#menu a:hover{
+	color: #ffffff;
+}
+
+nav#menu h1{
+	display: none;
+}
+/* ########### Grid #########*/
+/* reset basico */
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+/* conteiner */
+.conteiner{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 20px;
+}
+	@media(min-width: 1170px){
+		.conteiner{
+			max-width: 1170px;
+			padding: 0;
+		}
+	}
+/* linha */
+.row{
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+	.row:before,
+	.row:after{
+		content: "";
+		display: table;
+	}
+	.row:after{
+		clear: both;
+	}
+/* coluna */
+.col{
+	display: inline-block;
+	vertical-align: top;
+	min-height: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 100%;
+	margin-right: -4px;
+	/* border: 8px solid white; */
+	/* box-shadow: 1px 1px 4px black; */
+
+}
+	/* duas colunas*/
+	@media(min-width: 480px){
+		.col-2{
+			width: 50%;
+		}
+	}
+	/* tres colunas */
+	@media(min-width: 728px){
+		.col-3{
+			width: 33.3333%;
+		}
+	}
+	/* quatro colunas*/
+	@media(min-width: 992px){
+		.col-4{
+			width: 25%;
+		}
+	}
