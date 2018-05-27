@@ -49,6 +49,12 @@ p.preco{
     font-weight: normal;
     src: url(_font/Base\ 02.ttf);
 }
+@font-face {
+	font-family: Filxgirl;
+	font-style: normal;
+	font-weight: normal;
+	src: url(_font/Filxgirl.TTF);
+}
 
 /* Formatação do menu */
 nav#menu{
@@ -183,3 +189,32 @@ nav#menu h1{
 		margin:0 20px 10px 0;
 	  }
 
+.open_div{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	cursor: pointer;
+	background-image:url("../_img/sakura_leaf.jpg");
+	border: 1px solid #CCC;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	height: 50px;
+	width: 150px;
+}
+
+.open_div2{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	cursor: pointer;
+	background-image:url("../_img/sakura_leaf.jpg");
+	border: 1px solid #CCC;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	height: 50px;
+	width: 150px;
+}
+
+.open_div:hover,.open_div2:hover{
+	background-image:url("../_img/sakura-petal-salmon.png");
+}
