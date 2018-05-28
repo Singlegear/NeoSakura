@@ -6,20 +6,12 @@
 	<title>Contate-nos | NeoSakura</title>
 
 	<link rel="stylesheet" href="_css/estilos.css"/>
-	<link rel="stylesheet" href="_css/w3.css"> -->
+	<link rel="stylesheet" href="_css/w3.css">
 	<link type="text/css" rel="stylesheet" href="_css/form.css"/>
-	<!-- <link type="text/css" rel="stylesheet" href="/_css/jquery-ui.theme.min.css">
-	<link type="text/css" rel="stylesheet" href="/_css/jquery-ui.theme.css">
-	<link rel="structure" href="/_css/jquery-ui.structure.css">
-	<link type="text/css" rel="stylesheet" href="/_css/jquery-ui.css">
-	<link type="text/css" rel="stylesheet" href="/_css/jquery-ui.min.css"> -->
+	<link type="text/css" rel="stylesheet" href="_css/jquery-ui.min.css"/>
 
 	<link rel="shortcut icon" href="_img/favicon.ico"/>
-<!-- 
-	<script type="text/javascript" src="_js/jquery.js"></script>
-	<script type="text/javascript" src="_js/jquery-ui.js"></script>
-	<script type="text/javascript" src="_js/jquery-ui.min.js"></script>
-    -->
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
 	
@@ -29,10 +21,35 @@
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script>
-	$( function() {
-		
-		$("#datepicker").datepicker({dateFormat: 'dd/mm/yy',"changeYear": true, "changeMonth": true });
-	} );
+	    $( function() {
+    var availableTags = [
+      "Quixadá",
+      "Fortaleza",
+      "Banabuiu",
+      "Madalena",
+      "Iguatu",
+      "Boa Viagem",
+      "Canindé",
+      "Quixeramobim",
+      "Morada Nova",
+      "Morumbi",
+      "Cascavel",
+      "Amapa",
+      "São Paulo",
+      "Rio de Janeiro",
+      "Terezina",
+      "Salvador",
+      "Goiania",
+      "Curitiba",
+      "Maracanau",
+      "Uruque",
+      "Redenção",
+      "Ocara"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
 	</script>
 </head>
 <body>
@@ -83,10 +100,7 @@
 					<input type="text" name="snome" id="snome">
 				</div>
 			</fieldset>
-				<p>Date: <input type="text" id="datepicker"></p>
-				<!-- <label for="datepicker">Data de Nascimento</label>
-				<input type="text" id="datepicker" name="datepicker">
-				<br> -->
+
 				<div class="campo">
 					<label>Sexo</label>
 						
@@ -108,9 +122,11 @@
 				</div>
 
 			<fieldset class="grupo">
-				<div class="campo">
-					<label for="cidade">Cidade</label>
-					<input type="text" name="cidade" id="cidade" style="width: 10em" value="">
+				<div class="ui-widget">
+					<div class="campo">
+						<label for="tags">Cidade</label>
+						<input type="text" name="cidade" id="tags" style="width: 10em" value="">
+					</div>
 				</div>
 				<div class="campo">
 					<label for="estado">Estado</label>
